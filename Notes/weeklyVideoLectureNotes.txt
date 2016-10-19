@@ -1,0 +1,29 @@
+MongoDB for .NET Developers
+M101N
+
+Week 1
+	Download handout
+	7 week class
+	Build a blog
+	
+	Video Lecture (2 hours a week)
+	Quiz at the end of the video lecture
+	Homework 50%
+	Final Exam - long homework assignment 50%
+	
+	Certificate of Completion - MongoDB for Developers
+	
+MongoDB
+	Document database
+	JSON stored in MongoDB
+
+mongo - shell
+mongod - server
+
+Browser -> Http/Https -> WebServer (IIS, Apache)
+						MongoDB Driver -> TCP -> MongoDB Server (mongod)
+						
+						-> MVC/WebForms/WebApi/Simple.Web
+						
+Code in controller to talk to MongoDB (Purpose of course)
+

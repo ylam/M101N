@@ -1,0 +1,28 @@
+Homework 2.1
+Find all exam scores greater than or equal to 65, and sort those scores from lowest to highest.
+db.grades.find( { "score" : { $gte : 65} } ).sort( {"score" : 1} );
+
+Homework 2.2
+var data = db.grades.find({ "type" : "homework" }).sort( {student_id : 1, score : 1});
+
+for (var i = 0; i < data.length(); i++){
+	if (i % 2 == 0){
+		print("Low ", data[i].student_id, " ", data[i].score);
+		db.grades.remove({ student_id : data[i].student_id, score : data[i].score}, 1);
+	}
+	else {
+		print("High ", data[i].student_id, " ", data[i].score);		
+	}
+}
+		
+Homework 2.3
+
+Homework 2.4
+Which of the choices below is the title of a movie from the year 2013 that is rated PG-13 and won no awards?
+
+db.movieDetails.findOne( {"year" : 2013, "rated" : "PG-13", "awards.wins" : {
+$eq : 0}  } );
+
+Homework 2.5 - use the dot notation
+Using the video.movieDetails collection, how many movies list "Sweden" second in the the list of countries.
+db.movieDetails.find( { "countries.1": "Sweden"} ).count();
