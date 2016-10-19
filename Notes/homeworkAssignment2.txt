@@ -16,6 +16,7 @@ for (var i = 0; i < data.length(); i++){
 }
 		
 Homework 2.3
+Assignment information found at https://github.com/ylam/M101N/tree/master/Week2/M101N_registration_and_login__55105a5fd8ca39285577dfe3/2.3/src/M101DotNet.WebApp
 
 Homework 2.4
 Which of the choices below is the title of a movie from the year 2013 that is rated PG-13 and won no awards?
